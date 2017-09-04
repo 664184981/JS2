@@ -7,6 +7,7 @@
 //
 
 #import "BannerCell.h"
+#import "BannerView.h"
 
 #define topMargin           45
 #define bottomMargin        20
@@ -37,6 +38,9 @@
         self.backgroundColor = [UIColor clearColor];
         _iv = [[UIImageView alloc] initWithFrame:CGRectZero];
         [self addSubview:_iv];
+        
+        UITapGestureRecognizer *tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTap:)];
+        [self addGestureRecognizer:tgr];
     }
     return self;
 }
@@ -61,6 +65,12 @@
     {
         _iv.frame = CGRectMake(width - horizontalMargin - w, topMargin, w, h);
     }
+}
+
+
+- (void)onTap:(id)sender
+{
+    [_bannerView onTapCell:self];
 }
 
 @end

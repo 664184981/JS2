@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class BannerView;
+
 @interface BannerCell : UIView
 
 @property UIImageView *iv;
@@ -15,5 +17,7 @@
 @property NSInteger index;
 
 @property NSInteger positonType; // -1:left; 0:middle; 1:right
+
+@property (weak) BannerView *bannerView;
 
 @end

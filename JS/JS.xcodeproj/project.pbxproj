@@ -68,6 +68,10 @@
 		26C400B41F5D6B010097203B /* UIImage+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400AF1F5D6B010097203B /* UIImage+Ex.m */; };
 		26C400B81F5D6B710097203B /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400B71F5D6B710097203B /* GTMNSString+HTML.m */; };
 		26C400BC1F5D6BE50097203B /* UIScrollView+DXRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400BB1F5D6BE50097203B /* UIScrollView+DXRefresh.m */; };
+		26C400C01F5D761C0097203B /* AppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400BF1F5D761C0097203B /* AppHelper.m */; };
+		26C400C71F5D77D70097203B /* BXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400C41F5D77D70097203B /* BXTabBar.m */; };
+		26C400C81F5D77D70097203B /* BXTabBarBigButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400C61F5D77D70097203B /* BXTabBarBigButton.m */; };
+		26C400CB1F5D79080097203B /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400CA1F5D79080097203B /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -167,6 +171,14 @@
 		26C400B71F5D6B710097203B /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		26C400BA1F5D6BE50097203B /* UIScrollView+DXRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+DXRefresh.h"; sourceTree = "<group>"; };
 		26C400BB1F5D6BE50097203B /* UIScrollView+DXRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+DXRefresh.m"; sourceTree = "<group>"; };
+		26C400BE1F5D761C0097203B /* AppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHelper.h; sourceTree = "<group>"; };
+		26C400BF1F5D761C0097203B /* AppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppHelper.m; sourceTree = "<group>"; };
+		26C400C31F5D77D70097203B /* BXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXTabBar.h; sourceTree = "<group>"; };
+		26C400C41F5D77D70097203B /* BXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXTabBar.m; sourceTree = "<group>"; };
+		26C400C51F5D77D70097203B /* BXTabBarBigButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXTabBarBigButton.h; sourceTree = "<group>"; };
+		26C400C61F5D77D70097203B /* BXTabBarBigButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXTabBarBigButton.m; sourceTree = "<group>"; };
+		26C400C91F5D79080097203B /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		26C400CA1F5D79080097203B /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +203,7 @@
 		26C400091F5D06C20097203B /* JS */ = {
 			isa = PBXGroup;
 			children = (
+				26C400BD1F5D75FC0097203B /* App */,
 				26C400221F5D07530097203B /* Beauty */,
 				26C400251F5D07530097203B /* Common */,
 				26C4003C1F5D07530097203B /* Featured */,
@@ -231,6 +244,9 @@
 		26C400251F5D07530097203B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				26C400C91F5D79080097203B /* UIView+Extension.h */,
+				26C400CA1F5D79080097203B /* UIView+Extension.m */,
+				26C400C21F5D77D70097203B /* BXTabBar */,
 				26C400B91F5D6BE50097203B /* DXRefresh */,
 				26C400B51F5D6B710097203B /* GTMDefines.h */,
 				26C400B61F5D6B710097203B /* GTMNSString+HTML.h */,
@@ -378,6 +394,26 @@
 			path = DXRefresh;
 			sourceTree = "<group>";
 		};
+		26C400BD1F5D75FC0097203B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				26C400BE1F5D761C0097203B /* AppHelper.h */,
+				26C400BF1F5D761C0097203B /* AppHelper.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		26C400C21F5D77D70097203B /* BXTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				26C400C31F5D77D70097203B /* BXTabBar.h */,
+				26C400C41F5D77D70097203B /* BXTabBar.m */,
+				26C400C51F5D77D70097203B /* BXTabBarBigButton.h */,
+				26C400C61F5D77D70097203B /* BXTabBarBigButton.m */,
+			);
+			path = BXTabBar;
+			sourceTree = "<group>";
+		};
 		26C4FFFE1F5D06C20097203B = {
 			isa = PBXGroup;
 			children = (
@@ -491,18 +527,22 @@
 				26C400711F5D07530097203B /* BeatutyVC.m in Sources */,
 				26C400971F5D07530097203B /* HomeVC.m in Sources */,
 				26C4009E1F5D07530097203B /* InviteVC.m in Sources */,
+				26C400C01F5D761C0097203B /* AppHelper.m in Sources */,
 				26C4009A1F5D07530097203B /* YourLikeCell.m in Sources */,
 				26C400BC1F5D6BE50097203B /* UIScrollView+DXRefresh.m in Sources */,
+				26C400CB1F5D79080097203B /* UIView+Extension.m in Sources */,
 				26C4007C1F5D07530097203B /* FeaturedVC.m in Sources */,
 				26C400731F5D07530097203B /* AFHTTPRequestOperationManager.m in Sources */,
 				26C400771F5D07530097203B /* AFURLConnectionOperation.m in Sources */,
 				26C400721F5D07530097203B /* AFHTTPRequestOperation.m in Sources */,
 				26C400981F5D07530097203B /* PagedFlowView.m in Sources */,
 				26C400991F5D07530097203B /* StyledPageControl.m in Sources */,
+				26C400C81F5D77D70097203B /* BXTabBarBigButton.m in Sources */,
 				26C4000F1F5D06C20097203B /* AppDelegate.m in Sources */,
 				26C400B01F5D6B010097203B /* AFHTTPRequestOperationManagerEx.m in Sources */,
 				26C400781F5D07530097203B /* AFURLRequestSerialization.m in Sources */,
 				26C400B81F5D6B710097203B /* GTMNSString+HTML.m in Sources */,
+				26C400C71F5D77D70097203B /* BXTabBar.m in Sources */,
 				26C400741F5D07530097203B /* AFHTTPSessionManager.m in Sources */,
 				26C4009C1F5D07530097203B /* YourLikeItemCell.m in Sources */,
 				26C400751F5D07530097203B /* AFNetworkReachabilityManager.m in Sources */,

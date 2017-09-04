@@ -9,7 +9,6 @@
 #import "BannerView.h"
 #import "PagedFlowView.h"
 #import "StyledPageControl.h"
-#import "BannerCell.h"
 #import "NSArray+Util.h"
 
 @interface BannerView ()<PagedFlowViewDataSource,PagedFlowViewDelegate>
@@ -56,6 +55,14 @@
     _pageFlowView.frame = self.bounds;
 }
 
+- (void)didMoveToSuperview
+{
+    [super didMoveToSuperview];
+    
+    [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        [self changeBanner];
+    }];
+}
 
 #pragma mark- PagedFlowViewDataSource
 
@@ -84,6 +91,7 @@
     if( !cell )
     {
         cell = [[BannerCell alloc] initWithFrame:_pageFlowView.bounds];
+        cell.bannerView = self;
         [_cells addObject:cell];
     }
     cell.iv.image = [UIImage imageNamed:icon];
@@ -120,6 +128,36 @@
 
 - (void)flowView:(PagedFlowView *)flowView didTapPageAtIndex:(NSInteger)index{
     NSLog(@"Tapped on page # %ld", (long)index);
+}
+
+- (void)changeBanner
+{
+    static BOOL toRight = YES;
+    if( _pageFlowView.currentPageIndex == 0 )
+    {
+        toRight = YES;
+    }
+    else if( _pageFlowView.currentPageIndex == _cells.count - 1 )
+    {
+        toRight = NO;
+    }
+    
+    if( toRight )
+    {
+        [_pageFlowView scrollToPage:_pageFlowView.currentPageIndex + 1];
+    }
+    else
+    {
+        [_pageFlowView scrollToPage:_pageFlowView.currentPageIndex - 1];
+    }
+}
+
+- (void)onTapCell:(BannerCell *)cell
+{
+    if( _delegate && [_delegate respondsToSelector:@selector(didSelectItemAtIndex:)] )
+    {
+        [_delegate didSelectItemAtIndex:cell.index];
+    }
 }
 
 @end

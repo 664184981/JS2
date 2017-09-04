@@ -7,9 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BannerCell.h"
+
+@protocol BannerViewDelegate <NSObject>
+
+@optional
+
+- (void)didSelectItemAtIndex:(NSInteger)index;
+
+@end
+
+
 
 @interface BannerView : UIView
 
+@property (weak) id<BannerViewDelegate> delegate;
+
 + (CGFloat)height;
+
+- (void)onTapCell:(BannerCell*)cell;
 
 @end
