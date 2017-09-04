@@ -61,6 +61,13 @@
 		26C4009E1F5D07530097203B /* InviteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C4006C1F5D07530097203B /* InviteVC.m */; };
 		26C4009F1F5D07530097203B /* MineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C4006F1F5D07530097203B /* MineVC.m */; };
 		26C400A01F5D07530097203B /* MineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C400701F5D07530097203B /* MineVC.xib */; };
+		26C400B01F5D6B010097203B /* AFHTTPRequestOperationManagerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400A71F5D6B010097203B /* AFHTTPRequestOperationManagerEx.m */; };
+		26C400B11F5D6B010097203B /* AFJSONResponseSerializerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400A91F5D6B010097203B /* AFJSONResponseSerializerEx.m */; };
+		26C400B21F5D6B010097203B /* UIColor+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400AB1F5D6B010097203B /* UIColor+Ex.m */; };
+		26C400B31F5D6B010097203B /* UIFont+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400AD1F5D6B010097203B /* UIFont+Ex.m */; };
+		26C400B41F5D6B010097203B /* UIImage+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400AF1F5D6B010097203B /* UIImage+Ex.m */; };
+		26C400B81F5D6B710097203B /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400B71F5D6B710097203B /* GTMNSString+HTML.m */; };
+		26C400BC1F5D6BE50097203B /* UIScrollView+DXRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C400BB1F5D6BE50097203B /* UIScrollView+DXRefresh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +152,21 @@
 		26C4006E1F5D07530097203B /* MineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVC.h; sourceTree = "<group>"; };
 		26C4006F1F5D07530097203B /* MineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVC.m; sourceTree = "<group>"; };
 		26C400701F5D07530097203B /* MineVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineVC.xib; sourceTree = "<group>"; };
+		26C400A61F5D6B010097203B /* AFHTTPRequestOperationManagerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManagerEx.h; sourceTree = "<group>"; };
+		26C400A71F5D6B010097203B /* AFHTTPRequestOperationManagerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManagerEx.m; sourceTree = "<group>"; };
+		26C400A81F5D6B010097203B /* AFJSONResponseSerializerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONResponseSerializerEx.h; sourceTree = "<group>"; };
+		26C400A91F5D6B010097203B /* AFJSONResponseSerializerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONResponseSerializerEx.m; sourceTree = "<group>"; };
+		26C400AA1F5D6B010097203B /* UIColor+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Ex.h"; sourceTree = "<group>"; };
+		26C400AB1F5D6B010097203B /* UIColor+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Ex.m"; sourceTree = "<group>"; };
+		26C400AC1F5D6B010097203B /* UIFont+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Ex.h"; sourceTree = "<group>"; };
+		26C400AD1F5D6B010097203B /* UIFont+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Ex.m"; sourceTree = "<group>"; };
+		26C400AE1F5D6B010097203B /* UIImage+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Ex.h"; sourceTree = "<group>"; };
+		26C400AF1F5D6B010097203B /* UIImage+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Ex.m"; sourceTree = "<group>"; };
+		26C400B51F5D6B710097203B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		26C400B61F5D6B710097203B /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		26C400B71F5D6B710097203B /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		26C400BA1F5D6BE50097203B /* UIScrollView+DXRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+DXRefresh.h"; sourceTree = "<group>"; };
+		26C400BB1F5D6BE50097203B /* UIScrollView+DXRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+DXRefresh.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +231,20 @@
 		26C400251F5D07530097203B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				26C400B91F5D6BE50097203B /* DXRefresh */,
+				26C400B51F5D6B710097203B /* GTMDefines.h */,
+				26C400B61F5D6B710097203B /* GTMNSString+HTML.h */,
+				26C400B71F5D6B710097203B /* GTMNSString+HTML.m */,
+				26C400A61F5D6B010097203B /* AFHTTPRequestOperationManagerEx.h */,
+				26C400A71F5D6B010097203B /* AFHTTPRequestOperationManagerEx.m */,
+				26C400A81F5D6B010097203B /* AFJSONResponseSerializerEx.h */,
+				26C400A91F5D6B010097203B /* AFJSONResponseSerializerEx.m */,
+				26C400AA1F5D6B010097203B /* UIColor+Ex.h */,
+				26C400AB1F5D6B010097203B /* UIColor+Ex.m */,
+				26C400AC1F5D6B010097203B /* UIFont+Ex.h */,
+				26C400AD1F5D6B010097203B /* UIFont+Ex.m */,
+				26C400AE1F5D6B010097203B /* UIImage+Ex.h */,
+				26C400AF1F5D6B010097203B /* UIImage+Ex.m */,
 				26C400261F5D07530097203B /* AFNetworking */,
 				26C4003A1F5D07530097203B /* NSArray+Util.h */,
 				26C4003B1F5D07530097203B /* NSArray+Util.m */,
@@ -333,6 +369,15 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
+		26C400B91F5D6BE50097203B /* DXRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				26C400BA1F5D6BE50097203B /* UIScrollView+DXRefresh.h */,
+				26C400BB1F5D6BE50097203B /* UIScrollView+DXRefresh.m */,
+			);
+			path = DXRefresh;
+			sourceTree = "<group>";
+		};
 		26C4FFFE1F5D06C20097203B = {
 			isa = PBXGroup;
 			children = (
@@ -439,12 +484,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26C400B21F5D6B010097203B /* UIColor+Ex.m in Sources */,
 				26C400121F5D06C20097203B /* ViewController.m in Sources */,
 				26C400761F5D07530097203B /* AFSecurityPolicy.m in Sources */,
+				26C400B31F5D6B010097203B /* UIFont+Ex.m in Sources */,
 				26C400711F5D07530097203B /* BeatutyVC.m in Sources */,
 				26C400971F5D07530097203B /* HomeVC.m in Sources */,
 				26C4009E1F5D07530097203B /* InviteVC.m in Sources */,
 				26C4009A1F5D07530097203B /* YourLikeCell.m in Sources */,
+				26C400BC1F5D6BE50097203B /* UIScrollView+DXRefresh.m in Sources */,
 				26C4007C1F5D07530097203B /* FeaturedVC.m in Sources */,
 				26C400731F5D07530097203B /* AFHTTPRequestOperationManager.m in Sources */,
 				26C400771F5D07530097203B /* AFURLConnectionOperation.m in Sources */,
@@ -452,7 +500,9 @@
 				26C400981F5D07530097203B /* PagedFlowView.m in Sources */,
 				26C400991F5D07530097203B /* StyledPageControl.m in Sources */,
 				26C4000F1F5D06C20097203B /* AppDelegate.m in Sources */,
+				26C400B01F5D6B010097203B /* AFHTTPRequestOperationManagerEx.m in Sources */,
 				26C400781F5D07530097203B /* AFURLRequestSerialization.m in Sources */,
+				26C400B81F5D6B710097203B /* GTMNSString+HTML.m in Sources */,
 				26C400741F5D07530097203B /* AFHTTPSessionManager.m in Sources */,
 				26C4009C1F5D07530097203B /* YourLikeItemCell.m in Sources */,
 				26C400751F5D07530097203B /* AFNetworkReachabilityManager.m in Sources */,
@@ -460,8 +510,10 @@
 				26C400791F5D07530097203B /* AFURLResponseSerialization.m in Sources */,
 				26C4007E1F5D07530097203B /* BannerCell.m in Sources */,
 				26C4007F1F5D07530097203B /* BannerView.m in Sources */,
+				26C400B41F5D6B010097203B /* UIImage+Ex.m in Sources */,
 				26C4009F1F5D07530097203B /* MineVC.m in Sources */,
 				26C4007A1F5D07530097203B /* AFURLSessionManager.m in Sources */,
+				26C400B11F5D6B010097203B /* AFJSONResponseSerializerEx.m in Sources */,
 				26C4000C1F5D06C20097203B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,6 +677,7 @@
 				26C400201F5D06C20097203B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
